@@ -1,0 +1,31 @@
+*{box-sizing:border-box}body{margin:0;background:#f5f1e8;color:#111827;font-family:system-ui,-apple-system,Segoe UI,sans-serif}button,input{font:inherit}button{border:0;border-radius:14px;padding:14px 18px;background:#111827;color:white;font-weight:800;cursor:pointer;width:100%}button:disabled{opacity:.45}main{width:min(100% - 28px,760px);margin:auto;padding:24px 0 60px}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px}header b,.landing>b{letter-spacing:.08em;line-height:.9}small{display:block;opacity:.65}h1{font-size:clamp(2.2rem,8vw,4.5rem);line-height:.95;margin:10px 0 24px}.card{background:#fff;border-radius:22px;padding:22px;margin:18px 0;box-shadow:0 10px 30px #0000000d}label{display:block;font-weight:800;margin:16px 0}input{display:block;width:100%;padding:14px;margin-top:8px;border:1px solid #d6d3d1;border-radius:12px}.light{width:auto;background:transparent;color:#111827;border:1px solid #d6d3d1}.item{display:flex;flex-direction:column;text-align:left;gap:5px;margin:10px 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}.stats div{background:#111827;color:white;padding:20px;border-radius:18px}.stats strong{display:block;font-size:2.5rem}.center{text-align:center}.row{display:flex;justify-content:space-between;gap:15px;padding:15px 0;border-bottom:1px solid #eee}.row span{display:grid;gap:4px}.ok{display:grid;gap:5px;margin-top:18px;padding:18px;background:#dcfce7;border-radius:16px}.error{padding:12px;background:#fee2e2;border-radius:12px}.switch{text-align:center;text-decoration:underline;cursor:pointer}.landing{padding-top:10vh}#reader{margin:16px 0;overflow:hidden;border-radius:16px}
+
+.admin-app { min-height:100vh; padding:24px clamp(16px,4vw,60px) 70px; background:#f4f1e8; }
+.admin-header { max-width:1400px; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:center; }
+.admin-nav { max-width:1400px; margin:0 auto 28px; display:flex; gap:8px; overflow:auto; padding-bottom:4px; }
+.admin-nav button { background:#fff; color:#111827; border:1px solid #ddd8ce; white-space:nowrap; }
+.admin-nav button.active { background:#111827; color:#fff; }
+.admin-app > section, .admin-app > h2, .admin-app > .error { max-width:1400px; margin-left:auto; margin-right:auto; }
+.admin-grid { display:grid; grid-template-columns:repeat(6,minmax(130px,1fr)); gap:14px; margin:18px 0 24px; }
+.metric { background:#111827; color:#fff; border-radius:20px; padding:20px; min-height:120px; display:flex; flex-direction:column; justify-content:space-between; }
+.metric span { opacity:.72; font-weight:700; }
+.metric strong { font-size:2.3rem; }
+.admin-two { display:grid; grid-template-columns:minmax(280px,390px) 1fr; gap:20px; align-items:start; }
+.form-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+textarea { width:100%; min-height:90px; resize:vertical; border:1px solid #d6d3d1; border-radius:12px; padding:12px; font:inherit; }
+.table-wrap { overflow:auto; }
+table { width:100%; border-collapse:collapse; font-size:.92rem; }
+th,td { padding:11px 10px; border-bottom:1px solid #e7e5e4; text-align:left; white-space:nowrap; }
+th { font-size:.78rem; text-transform:uppercase; letter-spacing:.04em; opacity:.65; }
+.mini-stats { display:flex; flex-wrap:wrap; gap:8px; margin:15px 0; }
+.mini-stats b { background:#f4f1e8; border-radius:999px; padding:8px 11px; font-size:.82rem; }
+.check-row { display:flex; align-items:center; gap:10px; margin:0; padding:9px 0; border-bottom:1px solid #eee; }
+.check-row input { width:auto; margin:0; }
+.section-title { display:flex; justify-content:space-between; align-items:center; margin-top:22px; }
+.section-title button { padding:8px 12px; font-size:.8rem; }
+.row { display:flex; justify-content:space-between; gap:14px; align-items:center; padding:12px 0; border-bottom:1px solid #eee; }
+.row > div, .row span:first-child { display:flex; flex-direction:column; gap:3px; }
+.row small { opacity:.6; }
+.loading { padding:40px; text-align:center; }
+@media (max-width:1000px){ .admin-grid{grid-template-columns:repeat(3,1fr)} }
+@media (max-width:700px){ .admin-grid{grid-template-columns:repeat(2,1fr)} .admin-two{grid-template-columns:1fr} .admin-header{align-items:flex-start} }
